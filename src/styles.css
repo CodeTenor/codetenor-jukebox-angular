@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+.background {
+    background-color: #545A55;
+}
+
+h1 {
+    color: #FFCC99;
+    font-family: 'Roboto';
+    font-size: 100px !important;
+}
+
+h4 {
+    color: #FFCC99;
+    font-family: 'Roboto';
+}
+
+.mr-20 {
+    margin-left: 100px !important;
+}
+
+.mb-20 {
+    margin-bottom: 30px !important;
+}
+
+.mt-20 {
+    margin-top: 50px !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 10px;
+}
+
+.logo {
+    width: 85px;
+    float: right;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.img-circle {
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 50%;
+    border: 0.5px solid #FFCC99;
+    -webkit-box-shadow: 0px 0px 5px #FFCC99;
+    -moz-box-shadow: 0px 0px 5px #FFCC99;
+}
+
+.img-square-sm {
+    width: 70px;
+    height: 70px;
+    border: 0.5px solid #FFCC99;
+    -webkit-box-shadow: 0px 0px 5px #FFCC99;
+    -moz-box-shadow: 0px 0px 5px #FFCC99;
+}
+
+.header {
+    position: relative;
+}
+
+.row.row-no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.col-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.border {
+    border: 5px solid red;
+}
+
+.padding-10 {
+    padding: 10px;
+}

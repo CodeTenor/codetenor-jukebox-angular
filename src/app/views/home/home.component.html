@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row mb-20">
+        <div class="col-4">
+            <img class="logo" src="assets/images/play.png" alt="">
+        </div>
+        <div class="col">
+            <h1>
+                JUKEBOX
+            </h1>
+        </div>
+    </div>
+    <div class="container row mt-20">
+        <div class="col-5">
+            <div class="row justify-content-center mb-20 mt-20">
+                <h4>
+                    UPCOMING
+                </h4>
+            </div>
+            <div style="overflow-y: scroll; height:400px; width: 400px;">
+                <div *ngFor="let track of tracks" class="row justify-content-center m-10 padding-10">
+                    <div class="col-3">
+                        <img class="img-square-sm" src="{{track.picture_big}}" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <h5>
+                                {{track.title}}
+                            </h5>
+                        </div>
+                        <div class="row">
+                            <h6>
+                                {{track.artist}}
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col" *ngIf="track !== null || track !== undefined">
+            <div class="row justify-content-center mb-20">
+                <img class="img-circle" src="{{track.picture_big}}" alt="">
+            </div>
+            <div class="row justify-content-center">
+                <h4>
+                    {{track.title}}
+                </h4>
+            </div>
+            <div class="row justify-content-center">
+                <h4>
+                    {{track.artist}}
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="track !== null || track !== undefined" class="container row justify-content-center bottom">
+        <iframe scrolling="no" frameborder="0" allowTransparency="true" [src]="getPreviewUrl() | safe: 'resourceUrl'" width="700" height="90"></iframe>
+    </div>
+</div>
